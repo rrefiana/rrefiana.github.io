@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>19730_Portofolio</title>
+<style>
+  /* Reset and base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f3e8ff; /* pastel purple background */
+    color: #4b3b70;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    padding: 15px 10px;
+  }
+  .container {
+    max-width: 350px;
+    width: 100%;
+    background: #ede7f6;
+    border-radius: 18px;
+    padding: 20px 18px 24px 18px;
+    box-shadow: 0 4px 20px rgba(75, 59, 112, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  header {
+    text-align: center;
+  }
+  header h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    margin: 6px 0 4px 0;
+  }
+  header p {
+    font-size: 1.1rem;
+    color: #7b65b6;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.6px;
+  }
+  section {
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px 18px;
+    box-shadow: 0 2px 8px rgba(107, 85, 170, 0.15);
+  }
+  section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+    color: #6e56bd;
+    border-bottom: 2px solid #d6c8fb;
+    padding-bottom: 6px;
+  }
+  section p, section ul {
+    background: #e4dbf9;
+    padding: 12px 15px;
+    border-radius: 14px;
+    margin: 0;
+    color: #5f4b8b;
+    box-shadow: 0 2px 6px rgba(107, 85, 170, 0.15);
+  }
+  section ul {
+    list-style: inside disc;
+  }
+  section ul li {
+    margin-bottom: 8px;
+  }
+  #projects .project-item {
+    background: #ede7f6;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(107, 85, 170, 0.15);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+  #projects .project-item:hover {
+    background-color: #d9c9fa;
+    box-shadow: 0 4px 20px rgba(107, 85, 170, 0.4);
+  }
+  #projects .project-title {
+    color: #50328c;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+  #projects .project-desc {
+    font-size: 0.95rem;
+    color: #6e5fa3;
+  }
+  #contact a {
+    color: #7e57c2;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #8e7ec7;
+    margin-top: 10px;
+  }
+
+  /* Responsive - mobile optimized to fit height 600px */
+  @media (max-width: 360px) {
+    .container {
+      padding: 18px 14px 22px 14px;
+    }
+    header h1 {
+      font-size: 1.7rem;
+    }
+    section h2 {
+      font-size: 1.25rem;
+    }
+    #projects .project-title {
+      font-size: 1.05rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Portofolio pribadi tema ungu pastel">
+    <header>
+      <h1>Refiana Enindya</h1>
+      <p>Pelajar RPL</p>
+    </header>
+
+    <section id="about" aria-label="Tentang saya">
+      <h2>about me</h2>
+      <p>haiii perkenalkan nama saya Refiana Enindya Dwi Sasmita. Saya adalah seorang pelajar kelas 10 pada program keahlian Pengembangan Perangkat Lunak dan Gim atau PPLG di SMK Negeri 1 Bawang Banjarnegara.</p>
+    </section>
+
+    <section id="projects" aria-label="Proyek saya">
+      <h2>Proyek</h2>
+      <div class="project-item" tabindex="0" aria-label="Proyek Website Portfolio">
+        <div class="project-title">Website Portfolio</div>
+        <div class="project-desc">Website pribadi yang menampilkan hasil karya dan pengalaman saya.</div>
+      </div>
+    </section>
+
+    <section id="experience" aria-label="Pengalaman organisasi">
+      <h2>Pengalaman Organisasi</h2>
+      <ul>
+        <li><strong>Sekretaris OSIS SMPN 1 Purwanegara</strong> (2023 - 2024).</li>
+        <li><strong>Sekretaris PMR Madya SMPN 1 Purwanegara</strong> (2022-2024)</li>
+        <li><strong>Bendahara PIK R Desa Danaraja</strong> (2024)</li>
+        <li><strong>Sekretaris PSPG SMKN 1 Bawang</strong> (2024-2025)</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-label="Kontak saya">
+      <h2>Kontak</h2>
+      <p><a href="refiana795@gmail.com">email saya</a></p>
+      <p><a href="https://github.com/rrefiana/rrefiana.Github.git" target="_blank" rel="noopener noreferrer">github saya</a></p>
+      <p><a href="https://Instagram.com/@rrfidwis">Instagram saya</a></p>
+      <p><a href="https://Tiktok.com/@rrfidwiss">tiktok saya</a></p>
+    </section>
+
+    <footer>
+      rrfidwis 2025
+    </footer>
+  </div>
+</body>
+</html>
+</content>
+</create_file>
